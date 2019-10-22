@@ -28,20 +28,11 @@ public class Test2 : MonoBehaviour
     {
         // Bossクラスの変数を宣言してインスタンスを代入
         Boss MagicMan = new Boss();
-
-        MagicMan.Magic();
-        MagicMan.Magic();
-        MagicMan.Magic();
-        MagicMan.Magic();
-        MagicMan.Magic();
-        MagicMan.Magic();
-        MagicMan.Magic();
-        MagicMan.Magic();
-        MagicMan.Magic();
-        MagicMan.Magic();
-        //ここから魔法が使えない
-        MagicMan.Magic();
-        MagicMan.Magic();
+        //11回目から魔法が使えない
+        for (int i = 0; i < 11; i++)
+        {
+            MagicMan.Magic();
+        }
     }
 
     // Update is called once per frame
